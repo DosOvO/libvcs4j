@@ -5,4 +5,4 @@ install:
     - ps: Set-Content -Path "gradle.properties" -Value "org.gradle.daemon=false"
 
 build_script:
-    - gradle build
+    - gradle build -i

@@ -12,7 +12,7 @@ before_install:
     - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install gradle; fi
 
 script:
-    - gradle build
+    - gradle build -i
 
 after_success:
     - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then gradle jacocoTestReport coveralls; fi
